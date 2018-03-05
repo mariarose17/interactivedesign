@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Integration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script>
+
+        $(document).ready(function () {
+            $("#webDiv").hide();
+
+            $("#webimg").click(function () {
+                $("#kindimg").hide();
+                $("#webDiv").show();
+
+            });
+
+
+            $("#kindimg").click(function () {
+                $("#webimg").hide();
+                $("#webDiv").show();
+
+            });
+
+            $("#cancelBtn").click(function () {
+                $("#kindimg").show();
+                $("#webimg").show();
+
+                $("#webDiv").hide();
+
+            });
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse mynav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="logo2.png" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav ">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Campaigns
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Page 1-1</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 1-2</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 1-3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Reports</a>
+                    </li>
+                    <li>
+                        <a href="#">Communication</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Extras
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Page 1-1</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 1-2</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 1-3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+
+
+                </ul>
+                <ul id="rightli" class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">ForeverBrave
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="headingInt">Integrations</h1>
+        <p class="headingInt">Configuration of external integrations.</p>
+        <p class="headingInt">We offer very limited support for external integrations.Please consult the
+            <u>documentation</u> for help in buliding your integration.</p>
+
+        <hr>
+        <center>
+            <button id="addIntegration" type="button" class="btn btn-success inteButton" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-plus"></span> ADD INTEGRATION</button>
+
+        </center>
+        <hr>
+        <div class="row">
+            <p> </p>
+        </div>
+        <div class="row">
+            <p> </p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Active Public API Keys</p>
+            </div>
+
+            <div class="col-sm-4">
+                <p> </p>
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-2">
+                <button type="button" class="btn btn-success inteButton2">
+                    <span class="glyphicon glyphicon-plus"></span> ADD API KEY</button>
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="pfont">Name</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="pfont">API Key</p>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <p></p>
+            </div>
+            <div class="col-sm-2">
+                <p>1q1q1qq1qqqqqqq144</p>
+            </div>
+
+            <div class="col-sm-2">
+                <p class="pspace">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    <span class="glyphicon glyphicon-trash"></span>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p> </p>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <p></p>
+            </div>
+            <div class="col-sm-2">
+                <p>1q1q1qq1qqqqqqq144</p>
+            </div>
+            <div class="col-sm-2">
+                <p class="pspace">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    <span class="glyphicon glyphicon-trash"></span>
+                </p>
+            </div>
+
+
+            <div class="col-sm-4">
+                <p> </p>
+            </div>
+
+
+        </div>
+
+
+
+        <hr>
+
+        <div class="row">
+            <p> </p>
+        </div>
+        <div class="row">
+            <p> </p>
+        </div>
+
+
+        <p>
+            <label>Help:</label>
+            <u>API Documentation</u>
+        </p>
+        <p>To request further help please
+            <u> fill out this form.</u>
+        </p>
+
+
+        <div class="row">
+            <p> </p>
+        </div>
+        <div class="row">
+            <p> </p>
+        </div>
+
+
+        <div>
+            <img class="chat" src="chat.png" alt="webhook" />
+        </div>
+
+    </div>
+
+    <div id="help" class="helpText">
+        Get Help
+
+    </div>
+
+
+   <!-- <div class="footer">
+        <p>@ Webconnex 2018 </p>
+    </div>-->
+    
+    <footer class="container-fluid myfooter"> 
+            <p>@ Webconnex 2018 </p>
+
+    </footer>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2 class="modal-title">Choose Integration</h2>
+                    </center>
+                </div>
+                <div class="modal-body">
+
+                    <div id="logoView" class="row">
+                        <center>
+                            <a href="#">
+                                <img id="webimg" class="imgLinkWeb" src="webhook.png" alt="webhook" />
+                            </a>
+                            <a href="#">
+                                <img id="kindimg" class="imgLinkKind" src="kindful.png" alt="webhook" />
+                            </a>
+
+
+                        </center>
+
+                    </div>
+
+                    <div id="webDiv">
+                        <center>
+                            <h3>Configure Webhook</h3>
+                        </center>
+                        <div class="row">
+                            <p> </p>
+                        </div>
+                        <div class="row">
+                            <p> </p>
+                        </div>
+
+                        <div id="submitform">
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-offset-2 col-sm-4">
+                                        <label class="mlabl" for="name">Webhook Name:</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-offset-2 col-sm-4">
+
+                                        <label class="mlabl" for="url">Webhook Endpoint URL:</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="url" placeholder="Endpoint URL" name="url">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <p> </p>
+                    </div>
+                    <div class="row">
+                        <p> </p>
+                    </div>
+                    <div class="row">
+                        <p> </p>
+                    </div>
+                    <div class="row">
+                        <p> </p>
+                    </div>
+
+
+                    <div>
+                        <center>
+                            <a href="websettings.html">
+                                <button id="web" type="button" class="btn btn-default inteButton3">Add integration</button>
+                            </a>
+
+                            <button id="cancelBtn" type="button" class="cancelButton"> Cancel</button>
+
+
+                        </center>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
